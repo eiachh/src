@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "cutsiemod:items/the_baguette_item"
+    }
+}

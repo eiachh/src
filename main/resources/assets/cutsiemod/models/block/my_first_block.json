@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "cutsiemod:blocks/my_first_block"
+    }
+}

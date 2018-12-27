@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "cutsiemod:items/my_first_block"
+    }
+}

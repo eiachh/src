@@ -1,0 +1,19 @@
+item.cutsiemod.BasicStar.name=CuteStar
+item.cutsiemod.Bubu.name=MyCutie
+item.cutsiemod.Basic_Crafting_Heart.name=Basic Star
+
+//BLOCK
+tile.cutsiemod.first_block.name=Pepe Block
+
+//inventory tabs
+itemGroup.cutsiemod.mainTab=Cutsie Mod
+
+//TOOLS
+item.le_baguette.name=Anal penetrator
+item.cutsiemod.heart_axe.name=Heart Axe
+
+//armors
+item.cutsiemod.Pepe_Armor.name=Pepe Armor
+item.cutsiemod.Pepe_Helm.name=Pepe Helm
+item.cutsiemod.Pepe_Boots.name=Pepe Boots
+item.cutsiemod.Pepe_Leggings.name=Pepe Leggings
