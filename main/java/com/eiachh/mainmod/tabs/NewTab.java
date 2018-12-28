@@ -12,6 +12,7 @@ public class NewTab extends CreativeTabs {
  
     public NewTab(String name) {
         super(MainModpls.MODID + "." + name);
+
     }
  
     @SideOnly(Side.CLIENT)
@@ -19,5 +20,7 @@ public class NewTab extends CreativeTabs {
     public ItemStack getTabIconItem() {
         return new ItemStack(TutorialItems.BASIC_STAR_ITEM);
     }
- 
+
+
+
 }

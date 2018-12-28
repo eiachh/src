@@ -23,6 +23,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
  
 @Mod(modid = MainModpls.MODID, name = MainModpls.NAME, version = MainModpls.VERSION, acceptedMinecraftVersions = MainModpls.MC_VERSION)
 public class MainModpls {
+    //annotation
  
     public static final String MODID = "cutsiemod";
     public static final String NAME = "Cutsiemod yaas";
@@ -41,6 +42,7 @@ public class MainModpls {
     public static IProxy proxy;
     
     public static Logger logger;
+
 
     
     //dasda
@@ -68,6 +70,7 @@ public class MainModpls {
     	proxy.postInit(event);
     	
     	logger.info(asd);
+
     }
  
 }
