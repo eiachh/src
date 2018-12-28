@@ -13,21 +13,15 @@ import com.eiachh.mainmod.material.Heart_Material;
 import com.eiachh.mainmod.material.NewMaterial;
 import com.eiachh.mainmod.material.NewMaterial_Peperium;
 
-import org.apache.logging.log4j.Logger;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.init.Blocks;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.world.storage.loot.LootTableList;
-import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraft.world.storage.loot.LootTableList;
- 
+
 @EventBusSubscriber
 public class RegistryHandler {
  
