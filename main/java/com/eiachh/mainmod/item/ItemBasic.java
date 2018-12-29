@@ -13,5 +13,5 @@ public class ItemBasic extends Item {
         setRegistryName(Name);
         setCreativeTab(MainModpls.TUTORIAL_TAB);
     }
- 
+
 }

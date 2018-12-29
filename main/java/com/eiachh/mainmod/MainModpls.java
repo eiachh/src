@@ -1,5 +1,6 @@
 package com.eiachh.mainmod;
  
+import com.eiachh.mainmod.init.TutorialBlocks;
 import org.apache.logging.log4j.Logger;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -49,6 +50,7 @@ public class MainModpls {
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        //TutorialBlocks.init();
         logger = event.getModLog();
         proxy.preInit(event);
         this.asd="RTRTRTRTRTRTTTRT";
