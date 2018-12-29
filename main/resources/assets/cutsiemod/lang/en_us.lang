@@ -1,9 +1,11 @@
 item.cutsiemod.BasicStar.name=CuteStar
 item.cutsiemod.Bubu.name=MyCutie
-item.cutsiemod.Basic_Crafting_Heart.name=Basic Star
+item.cutsiemod.Basic_Crafting_Heart.name=Heart Ingot
+item.cutsiemod.myseed_item.name=Our seed
 
 //BLOCK
 tile.cutsiemod.first_block.name=Pepe Block
+tile.cutsiemod.block_with_gui.name=Gui Block
 
 //inventory tabs
 itemGroup.cutsiemod.mainTab=Cutsie Mod

@@ -27,6 +27,8 @@ public class ModelRegistryHandler {
 
         registerModel(Item.getItemFromBlock(TutorialBlocks.MY_FIRST_BLOCK));
         registerModel(Item.getItemFromBlock(TutorialBlocks.GUI_BLOCK));
+        registerModel(Item.getItemFromBlock(TutorialBlocks.PURPLE_LAMP));
+        registerModel(Item.getItemFromBlock(TutorialBlocks.WEIRD_SHITE));
 
         registerModel(TutorialPickaxe.THE_BAGUETTE_ITEM);
         

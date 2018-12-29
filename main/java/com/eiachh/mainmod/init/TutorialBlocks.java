@@ -16,6 +16,8 @@ public class TutorialBlocks {
     public static final Block MY_FIRST_BLOCK = null;
     public static final Block GUI_BLOCK = null;
     public static final Block FIRST_CROP_BLOCK=null;
+    public static final Block PURPLE_LAMP = null;
+    public static final Block WEIRD_SHITE = null;
 
    /* public static void init()
     {
