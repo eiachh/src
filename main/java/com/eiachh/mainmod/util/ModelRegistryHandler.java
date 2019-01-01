@@ -23,6 +23,7 @@ public class ModelRegistryHandler {
         registerModel(TutorialItems.BUBU_ITEM);
         registerModel(TutorialItems.CRAFTING_HEART_ITEM);
         registerModel(TutorialItems.MYSEED_ITEM);
+        registerModel(TutorialItems.BIG_ITEM);
 
 
         registerModel(Item.getItemFromBlock(TutorialBlocks.MY_FIRST_BLOCK));
@@ -31,6 +32,7 @@ public class ModelRegistryHandler {
         registerModel(Item.getItemFromBlock(TutorialBlocks.WEIRD_SHITE));
 
         registerModel(TutorialPickaxe.THE_BAGUETTE_ITEM);
+        registerModel(TutorialPickaxe.PORTA_ROD_TOOL);
         
         registerModel(TutorialArmor.PEPERIUM_ARMOR);
         registerModel(TutorialArmor.PEPERIUM_HEAD);

@@ -6,6 +6,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -15,7 +16,9 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import  com.eiachh.mainmod.init.TutorialItems;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
@@ -49,6 +52,19 @@ public class LootTableCatch {
 			}
 		}
 	}
+
+	/*@SubscribeEvent
+	public void cathcHit(LivingAttackEvent event) {
+		//if (event.getEntity().world.isRemote == false) {
+			if (event.getEntity() != null ) {
+				if ( event.getSource().getTrueSource() != null){
+
+					event.getSource().getTrueSource().setPosition(-104, 74, 257);
+
+				}
+			}
+		//}
+	}*/
 
 
 

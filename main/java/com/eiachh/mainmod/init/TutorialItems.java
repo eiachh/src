@@ -16,6 +16,7 @@ public class TutorialItems {
     public static final Item BUBU_ITEM =null;
     public static final Item CRAFTING_HEART_ITEM= null;
     public static final Item MYSEED_ITEM=null;
+    public  static  final  Item BIG_ITEM=null;
 
    /* public void init()
     {

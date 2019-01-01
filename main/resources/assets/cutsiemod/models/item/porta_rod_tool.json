@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "cutsiemod:items/porta_rod_tool"
+  }
+}

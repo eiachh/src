@@ -46,4 +46,9 @@ public class GuiBlock extends Block {
         //wont place block if rightclicked on it
         return true;
     }
+
+    @Override
+    public boolean isOpaqueCube(IBlockState state) {
+        return false;
+    }
 }

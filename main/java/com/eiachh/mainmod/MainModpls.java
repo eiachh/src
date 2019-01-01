@@ -1,5 +1,6 @@
 package com.eiachh.mainmod;
  
+import com.eiachh.mainmod.event.EventHandlingForPortalRodTool;
 import com.eiachh.mainmod.init.TutorialBlocks;
 import org.apache.logging.log4j.Logger;
 
@@ -55,6 +56,7 @@ public class MainModpls {
         proxy.preInit(event);
         this.asd="RTRTRTRTRTRTTTRT";
         MinecraftForge.EVENT_BUS.register(new LootTableCatch());
+        MinecraftForge.EVENT_BUS.register(new EventHandlingForPortalRodTool());
 
     }
 
