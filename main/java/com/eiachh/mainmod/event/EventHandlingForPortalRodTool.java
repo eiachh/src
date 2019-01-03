@@ -4,13 +4,18 @@ import com.eiachh.mainmod.init.TutorialPickaxe;
 import com.eiachh.mainmod.pickaxe.PickaxeBasic;
 import com.eiachh.mainmod.tools.PortaRodTool;
 import net.java.games.input.Keyboard;
+import net.minecraft.util.EnumActionResult;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.fml.common.eventhandler.Event;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class EventHandlingForPortalRodTool {
-    @SubscribeEvent
+   /* @SubscribeEvent
     public void catchPlayerInterract(PlayerInteractEvent.RightClickBlock event) {
+
+        event.setUseItem(Event.Result.DENY);
         if (event.getEntityPlayer().world.isRemote == false) {
+            event.setCancellationResult(EnumActionResult.SUCCESS);
             if (event.getEntityPlayer().getHeldItemMainhand().getItem() instanceof PortaRodTool) {
                 if (event.getEntityPlayer().isSneaking()) {
                     PortaRodTool temp = (PortaRodTool) event.getEntityPlayer().getHeldItemMainhand().getItem();
@@ -18,9 +23,11 @@ public class EventHandlingForPortalRodTool {
                 }
             }
         }
-    }
 
-    @SubscribeEvent
+
+    }*/
+
+    /*@SubscribeEvent
     public void catchPlayerRightclick(PlayerInteractEvent.RightClickItem event) {
         if (event.getEntityPlayer().getHeldItemMainhand().getItem() instanceof PortaRodTool) {
             if (event.getEntity().isSneaking()) {
@@ -37,7 +44,7 @@ public class EventHandlingForPortalRodTool {
 
             }
         }
-    }
+    }*/
 
     @SubscribeEvent
     public void playerRightClickingEntity(PlayerInteractEvent.EntityInteractSpecific event) {

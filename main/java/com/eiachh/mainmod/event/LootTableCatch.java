@@ -1,5 +1,9 @@
 package com.eiachh.mainmod.event;
 
+import com.eiachh.mainmod.MainModpls;
+import com.mojang.realmsclient.gui.ChatFormatting;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.tutorial.Tutorial;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -12,17 +16,30 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.MinecraftError;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextComponentTranslation;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import  com.eiachh.mainmod.init.TutorialItems;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.swing.text.StyleContext;
+import java.awt.*;
+import java.time.format.TextStyle;
 import java.util.List;
 
 public class LootTableCatch {
@@ -52,6 +69,50 @@ public class LootTableCatch {
 			}
 		}
 	}
+	/*@SideOnly(Side.CLIENT)
+	@SubscribeEvent
+	public void reeewdyeven(LivingDeathEvent event){
+		Minecraft mc = Minecraft.getMinecraft();
+		mc.player.sendChatMessage(" died");
+		if (event.getEntity().world.isRemote==true){
+			System.out.println("isremote");
+			mc.player.sendStatusMessage(new TextComponentString(ChatFormatting.GREEN+"Client says you died"), false);
+		}
+		else{
+			System.out.println("isNOTremote");
+			mc.player.sendStatusMessage(new TextComponentString(ChatFormatting.GREEN+"Server says you died"), false);
+		}
+
+		if (event.getEntityLiving() instanceof  EntityPlayer || true) {
+			System.out.println("asd");
+			/*Minecraft mc = Minecraft.getMinecraft();
+			mc.player.sendChatMessage(" died");
+			if (event.getEntity().world.isRemote==true){
+				System.out.println("isremote");
+				mc.player.sendStatusMessage(new TextComponentString(ChatFormatting.GREEN+"Client says you died"), false);
+			}
+			else{
+				System.out.println("isNOTremote");
+				mc.player.sendStatusMessage(new TextComponentString(ChatFormatting.GREEN+"Server says you died"), false);
+			}
+
+
+
+
+		}
+	}
+	@SideOnly(Side.SERVER)
+	@SubscribeEvent
+	public void reeewdyevenn(LivingDeathEvent event){
+		if (event.getEntityLiving() instanceof  EntityPlayer){
+			MinecraftServer server = event.getEntity().world.getMinecraftServer();
+			server.sendMessage(new TextComponentString(event.getEntity().getName()+" reeeeeeeeeeee"));
+			server.getPlayerList().sendMessage(new TextComponentString("REEEEEEEEEEEEEE"));
+
+
+		}
+	}
+*/
 
 	/*@SubscribeEvent
 	public void cathcHit(LivingAttackEvent event) {

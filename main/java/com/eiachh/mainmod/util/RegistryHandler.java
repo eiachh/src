@@ -39,7 +39,7 @@ public class RegistryHandler {
         final Block[] blocks = {
                 new BlockBasic(Material.ROCK, "first_block", "my_first_block"),
                 new FirstCrop("first_crop_block"),
-                new GuiBlock(Material.ROCK, "block_with_gui","gui_block" ),
+                //new GuiBlock(Material.ROCK, "block_with_gui","gui_block" ),
                 new PurpleLamp(Material.ROCK, "purple_lamp", "purple_lamp"),
                 new PurpleLamp(Material.ROCK, "weird_shite", "weird_shite"),
                 new PortaRodPlaceHolder(Material.ROCK, "porta_rod_place_holder_block", "porta_rod_place_holder_block")
@@ -77,7 +77,7 @@ public class RegistryHandler {
 
         final Item[] itemBlocks = {
                 new ItemBlock(TutorialBlocks.MY_FIRST_BLOCK).setRegistryName(TutorialBlocks.MY_FIRST_BLOCK.getRegistryName()),
-                new ItemBlock(TutorialBlocks.GUI_BLOCK).setRegistryName(TutorialBlocks.GUI_BLOCK.getRegistryName()),
+                //new ItemBlock(TutorialBlocks.GUI_BLOCK).setRegistryName(TutorialBlocks.GUI_BLOCK.getRegistryName()),
                // new ItemBlock(TutorialBlocks.FIRST_CROP_BLOCK).setRegistryName(TutorialBlocks.FIRST_CROP_BLOCK.getRegistryName())
                 new ItemBlock(TutorialBlocks.PURPLE_LAMP).setRegistryName(TutorialBlocks.PURPLE_LAMP.getRegistryName()),
                 new ItemBlock(TutorialBlocks.WEIRD_SHITE).setRegistryName(TutorialBlocks.WEIRD_SHITE.getRegistryName()),

@@ -16,6 +16,7 @@ public class FirstGuiScreen extends GuiScreen {
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 
+
         Minecraft.getMinecraft().renderEngine.bindTexture(texture);
         drawTexturedModalRect(200, 200, 0, 0, width, height);
         super.drawScreen(mouseX, mouseY, partialTicks);
