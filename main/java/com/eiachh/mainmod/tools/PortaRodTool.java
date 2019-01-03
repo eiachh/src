@@ -41,18 +41,6 @@ public class PortaRodTool extends ItemPickaxe {
         return 1.0F;
     }
 
-    /*@Override
-    public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-
-
-        return super.onItemRightClick(worldIn, playerIn, handIn);
-    }
-
-    /* public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
-    {
-        return new ActionResult<ItemStack>(EnumActionResult.PASS, playerIn.getHeldItem(handIn));
-    }*/
-
     @Override
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         if (player.world.isRemote == false) {

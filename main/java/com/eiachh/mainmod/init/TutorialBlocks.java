@@ -19,16 +19,5 @@ public class TutorialBlocks {
     public static final Block PURPLE_LAMP = null;
     public static final Block WEIRD_SHITE = null;
     public static final Block PORTA_ROD_PLACE_HOLDER_BLOCK=null;
-
-   /* public static void init()
-    {
-        FIRST_CROP_BLOCK=new FirstCrop("first_crop_block");
-        GUI_BLOCK=new GuiBlock(Material.ROCK, "block_with_gui","gui_block" );
-    }
-
-    public static void register()
-    {
-        //register(FIRST_CROP_BLOCK);
-        //GameRegistry.reg
-    }*/
+    public static final Block TECH_VINE_BLOCK=null;
 }

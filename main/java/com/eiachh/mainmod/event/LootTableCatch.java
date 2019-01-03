@@ -46,11 +46,8 @@ public class LootTableCatch {
 
 	@SubscribeEvent
 	public void onLootTablesLoaded(LootTableLoadEvent event) {
-
-		System.out.println("GGGGGGGGGGGGGGGGGGGGG");
-
 		if (event.getName().equals(LootTableList.CHESTS_SIMPLE_DUNGEON)) {
-			System.out.println("simple dungeon chest");
+			System.out.println("simple dungeon chest LootTableCatch.java prints this at LootTableLoadEvent");
 		}
 
 	}

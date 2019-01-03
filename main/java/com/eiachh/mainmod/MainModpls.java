@@ -36,8 +36,7 @@ public class MainModpls {
     public static final String SERVER = "com.eiachh.mainmod.proxy.ServerProxy";
  
     public static final CreativeTabs TUTORIAL_TAB = new NewTab("mainTab");
-    
-    String asd ="LULULULLULULULULULULULLULULULULLULULULULULULU";
+
     
     
     @SidedProxy(clientSide = MainModpls.CLIENT, serverSide=MainModpls.SERVER)
@@ -54,7 +53,6 @@ public class MainModpls {
         //TutorialBlocks.init();
         logger = event.getModLog();
         proxy.preInit(event);
-        this.asd="RTRTRTRTRTRTTTRT";
         MinecraftForge.EVENT_BUS.register(new LootTableCatch());
         MinecraftForge.EVENT_BUS.register(new EventHandlingForPortalRodTool());
 
@@ -64,7 +62,6 @@ public class MainModpls {
  
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        logger.info(MainModpls.NAME  + "says hi!");
         proxy.init(event);
         My_Recipes.initSmelting();
     }
@@ -72,9 +69,6 @@ public class MainModpls {
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
     	proxy.postInit(event);
-    	
-    	logger.info(asd);
-
     }
  
 }

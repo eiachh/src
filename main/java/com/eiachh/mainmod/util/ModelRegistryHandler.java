@@ -30,6 +30,7 @@ public class ModelRegistryHandler {
         registerModel(Item.getItemFromBlock(TutorialBlocks.GUI_BLOCK));
         registerModel(Item.getItemFromBlock(TutorialBlocks.PURPLE_LAMP));
         registerModel(Item.getItemFromBlock(TutorialBlocks.WEIRD_SHITE));
+        registerModel(Item.getItemFromBlock(TutorialBlocks.TECH_VINE_BLOCK));
 
         registerModel(TutorialPickaxe.THE_BAGUETTE_ITEM);
         registerModel(TutorialPickaxe.PORTA_ROD_TOOL);

@@ -5,28 +5,26 @@ import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 
-public class PurpleLamp extends  Block {
-
-    public PurpleLamp(Material material, String unlocalizedName, String registryName) {
-        this(material, SoundType.STONE, unlocalizedName, registryName);
-
-
+public class TechVine extends Block {
+    public TechVine(Material material, String registryName) {
+        super(material);
+        setUnlocalizedName(MainModpls.MODID + "." + registryName);
+        setRegistryName(registryName);
+        setSoundType(SoundType.STONE);
         setCreativeTab(MainModpls.TUTORIAL_TAB);
-        setHardness(1);
-        setLightLevel(5.0F);
+
     }
 
-    public PurpleLamp(Material material, SoundType sound, String unlocalizedName, String registryName) {
-
+    public TechVine(Material material, SoundType sound,String registryName) {
         super(material);
-        setUnlocalizedName(MainModpls.MODID + "." + unlocalizedName);
+        setUnlocalizedName(MainModpls.MODID + "." + registryName);
         setRegistryName(registryName);
         setCreativeTab(MainModpls.TUTORIAL_TAB);
         setSoundType(sound);
 
-        setLightLevel(5.0F);
-        setHardness(1.0F);
+
     }
 
     @Override

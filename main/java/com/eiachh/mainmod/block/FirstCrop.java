@@ -22,7 +22,6 @@ public class FirstCrop extends BlockCrops {
 
     public FirstCrop(String unlocalizedName)
     {
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAA");
         setUnlocalizedName(MainModpls.MODID+"."+unlocalizedName);
         setRegistryName(new ResourceLocation(MainModpls.MODID,unlocalizedName));
         setCreativeTab(MainModpls.TUTORIAL_TAB);
